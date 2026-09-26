@@ -1,0 +1,13 @@
+// Note that "/-" comments out the following node.
+// Config split into cfg/ — see each file for its section.
+
+include "cfg/input.kdl"
+include "cfg/display.kdl"
+include "cfg/layout.kdl"
+include "cfg/rules.kdl"
+include "cfg/autostart.kdl"
+include "cfg/misc.kdl"
+include "cfg/animation.kdl"
+include "cfg/keybinds.kdl"
+
+include "noctalia.kdl"

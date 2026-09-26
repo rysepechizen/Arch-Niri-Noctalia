@@ -1,0 +1,45 @@
+layer-rule {
+    match namespace="^noctalia-dock$"
+    background-effect {
+        blur false
+        xray false
+    }
+}
+
+layer-rule {
+    match namespace="^noctalia-bar-[^\"]+$"
+
+    background-effect {
+        blur false
+        xray false
+    }
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
+// Example: block out two password managers from screen capture.
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    block-out-from "screen-capture"
+    // Use this instead if you want them visible on third-party screenshot tools.
+    // block-out-from "screencast"
+}
+
+  window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
