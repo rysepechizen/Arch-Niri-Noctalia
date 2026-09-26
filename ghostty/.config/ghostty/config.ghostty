@@ -1,0 +1,6 @@
+title = Sanzay@Latitude5410
+cursor-style = bar
+adjust-cursor-thickness = 6
+custom-shader = shaders/cursor_sweep.glsl
+custom-shader-animation = always
+theme = noctalia
