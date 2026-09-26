@@ -1,0 +1,29 @@
+[Default Applications]
+image/png=org.gnome.Loupe.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+x-scheme-handler/terminal=com.mitchellh.ghostty.desktop
+inode/directory=org.gnome.Nautilus.desktop
+image/jpeg=org.gnome.Loupe.desktop
+image/gif=org.gnome.Loupe.desktop
+image/webp=org.gnome.Loupe.desktop
+image/bmp=org.gnome.Loupe.desktop
+image/svg+xml=org.gnome.Loupe.desktop
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+video/quicktime=mpv.desktop
+video/x-msvideo=mpv.desktop
+audio/mpeg=io.bassi.Amberol.desktop
+audio/flac=io.bassi.Amberol.desktop
+audio/ogg=io.bassi.Amberol.desktop
+audio/x-wav=io.bassi.Amberol.desktop
+audio/mp4=io.bassi.Amberol.desktop
+text/plain=geany.desktop
+application/pdf=org.gnome.Papers.desktop
+
+[Added Associations]
+image/png=org.gnome.Loupe.desktop;
